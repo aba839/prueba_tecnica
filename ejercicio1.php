@@ -1,0 +1,90 @@
+<?php
+//VARIABLES Y CONSTANTES
+//1
+$variable_sin_valor="";
+//2
+$booleano1=true;
+$booleano2=false;
+//3
+$pi=pi();
+//4
+$tau=$pi*2;
+//5
+$mi_nombre="Alejandro";
+//6
+$mi_num_fav=5;
+//BOOLEANOS
+//7
+$comp1=($booleano1 and $booleano2);
+//8
+$comp2=!$booleano1;
+//9
+$comp3=(($booleano1 or $booleano2) and ($booleano1 or (!$booleano1 and !$booleano2)));
+//10
+$comp4=($booleano1 or $booleano2);
+//11
+$num1=3;
+$comp5=(($booleano1 and ($tau/2==$pi))or($num1>=$mi_num_fav));
+//12
+$num2=6;
+$num3=9;
+$comp6=($num2!==$num3);
+//13
+$comp7=($num1>=0 or $num1<($mi_num_fav*$tau));
+//OPERADORES
+//14
+$dos=2;
+$suma=$dos+5;
+//15
+$resta=$mi_num_fav-$num1;
+//16
+$suma2=$mi_num_fav+$num1;
+//17
+$multiplicacion=$mi_num_fav*$num1;
+//18
+$tres=3;
+$division=$mi_num_fav/$tres;
+//19
+$resto1=143%140;
+//20
+$resto2=25%5;
+//BUCLES
+//21
+$contarHasta10_2=0;
+for($i=1;$contarHasta10_2!==10;$i++){
+    $contarHasta10_2++;
+}
+//22
+$postl=0;
+$postJ=0;
+for($i=1;$i<11;$i++){
+    $postJ++;
+    $postl+=$postJ;
+}
+//23
+$sumaPares=0;
+for($i=1;$i<10;$i++){
+    if($i%2==0){
+        $sumaPares+=$i;
+    }
+}
+//24
+$contarHasta10=0;
+while($contarHasta10!==10){
+    $contarHasta10++;
+}
+//25
+$prel=0;
+$preJ=0;
+for($i=1;$i<11;$i++){
+    ++$preJ;
+    $prel+=$preJ;
+}
+//26
+$sumaImpares=0;
+for($i=1;$i<10;$i++){
+    if($i%2!=0){
+        $sumaImpares+=$i;
+    }
+}
+?>
